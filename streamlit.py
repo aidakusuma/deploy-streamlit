@@ -4,8 +4,8 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = joblib.load('model.pkl')
-scaler = joblib.load('scaler.pkl')
+model = joblib.load('./model.pkl')
+scaler = joblib.load('./scaler.pkl')
 
 def predict_status(inputs):
     input_array = np.array(inputs).reshape(1, -1)
